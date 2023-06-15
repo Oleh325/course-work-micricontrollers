@@ -1,4 +1,5 @@
-Course work for 4th term on IoT program in LPNU
+# SmartWindow project
+## Course work for 4th term on IoT program in LPNU
 
 NodeMCU ESP8266 microcontroller is used to collect temperature data and transfer it to the database via backend server.
 Servo motor is used to open and close the window.
