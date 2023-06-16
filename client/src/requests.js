@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const API_URL = "http://192.168.0.102:8000";
+
 export const getAllTemperatureData = async () => {
-    let temp_data = await axios.get(`http://localhost:8080/temp_data/`).then((response) => {
+    let temp_data = await axios.get(`${API_URL}/temp_data/`).then((response) => {
         return response.data;
     })
     .catch((error) => {
@@ -11,7 +13,7 @@ export const getAllTemperatureData = async () => {
 }
 
 export const getDesiredTemperature = async () => {
-    let desired_temp = await axios.get(`http://localhost:8080/desired_temp/`).then((response) => {
+    let desired_temp = await axios.get(`${API_URL}/desired_temp/`).then((response) => {
         return response.data;
     })
     .catch((error) => {
@@ -21,7 +23,7 @@ export const getDesiredTemperature = async () => {
 }
 
 export const setDesiredTemperature = async (temp) => {
-    let desired_temp = await axios.post(`http://localhost:8080/desired_temp/`, null, {
+    let desired_temp = await axios.post(`${API_URL}/desired_temp/`, null, {
         params: {
             temp: temp
         }

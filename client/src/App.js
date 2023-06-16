@@ -8,15 +8,21 @@ function App() {
 
     useEffect(() => {
         getDesiredTemperature().then((data) => {
-            setDesiredTemp(data.desired_temp * 10);
+            if (data !== undefined) {
+                setDesiredTemp(data.desired_temp * 10);
+            }
         });
         getAllTemperatureData().then((data) => {
-            setTemperatureData(data.pop());
+            if (data !== undefined) {
+                setTemperatureData(data.pop());
+            }
         });
 
         let interval = setInterval(() => {
             getAllTemperatureData().then((data) => {
-                setTemperatureData(data.pop());
+                if (data !== undefined) {
+                    setTemperatureData(data.pop());
+                }
             });
         }, 15000);
 
