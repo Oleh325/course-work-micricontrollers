@@ -16,5 +16,6 @@ Frontend is written in **React.js**, backend in **Node.js**, database is **MySQL
 6. Open `localhost:3000` in your browser
 
 📁 In the `assets` folder you can find the video of the project in action as well as some photos of the circuit and the project itself.
-
+<br />
+<br />
 ### ⚠️ Warning: the Proteus scheme haven't been tested as the project was assembled on the real hardware. It may need some tweaking to work properly. On the real microcontroller the project works as intended.
