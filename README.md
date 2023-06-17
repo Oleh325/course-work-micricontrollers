@@ -12,13 +12,13 @@ Frontend is written in **React.js**, backend in **Node.js**, database is **MySQL
 2. Clone the repository
 3. Create a database using the `database.sql` file
 4. Create `server/.env` file and add the following lines to it:
-```
+```sql
 MYSQL_HOST="your_host_here"
 MYSQL_USER="your_username_here"
 MYSQL_PASSWORD="your_password_here"
 ```
 5. Create `SmartWin/wifi_data.h` file and add the following lines to it:
-```
+```cpp
 #define SSID "name_of_your_wifi_here"
 #define WIFI_PASSWORD "password_of_your_wifi_here"
 ```
