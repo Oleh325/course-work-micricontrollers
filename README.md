@@ -2,7 +2,7 @@
 ## Course work for 4th term on IoT program in LPNU
 
 **NodeMCU ESP8266** microcontroller is used to collect temperature data and transfer it to the database via backend server.
-Servo motor is used to open and close the window.
+**DHT-11** temperature and humidity sensors are used to collect data. **Servo motor** is used to open and close the window.
 Desired temperature is recieved by the microcontroller from the database, and can be changed by the user via frontend.
 
 Frontend is written in **React.js**, backend in **Node.js**, database is **MySQL**.
